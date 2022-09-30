@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelector(".header"),c=document.querySelector(".button"),t=document.querySelector("#check");c.addEventListener("click",(function(){t.checked?e.classList.add("header_active"):e.classList.remove("header_active")}))})();
