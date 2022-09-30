@@ -9,7 +9,7 @@
 - HTML
 - CSS
 - JavaScript
-- Файловая струткура по БЭМ Nested
+- Файловая струткура по БЭМ Flat
 - Проект собран с помощью Webpack
 
 ## Github Pages
