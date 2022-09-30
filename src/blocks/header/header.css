@@ -1,0 +1,362 @@
+.header {
+  box-sizing: border-box;
+  max-width: 1190px;
+  padding: 16px 10px;
+  margin: 0 auto;
+}
+
+.header__content {
+  box-sizing: border-box;
+  display: flex;
+  gap: 0 30px;
+  margin-bottom: 27px;
+}
+
+.header__main {
+  width: 100%;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 22px;
+}
+
+.header__center {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__list {
+  gap: 0 1.5rem;
+}
+
+.header__register {
+  gap: 0 1.6rem;
+}
+
+.header__register-item {
+  position: relative;
+}
+
+.header__register-item:first-child::after {
+  content: '';
+  position: absolute;
+  right: -14px;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
+}
+
+.header__list,
+.header__register,
+.header__center-list,
+.header__center-cards,
+.header__roster-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.header__list-item,
+.header__register-item,
+.header__center-list-item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.01em;
+  color: #252525;
+}
+
+.header__center-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 35px 0 30px;
+  gap: 12px 0;
+}
+
+.header__center-list-item {
+  text-decoration: underline;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__center-list-item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
+
+.header__center-list-item:first-child::before {
+  background-image: url(../../images/cart.svg);
+}
+.header__center-list-item:nth-child(2)::before {
+  background-image: url(../../images/star.svg);
+}
+.header__center-list-item:nth-child(3)::before {
+  background-image: url(../../images/balance.svg);
+}
+
+.header__center-cards {
+  gap: 0 15px;
+}
+
+.header__center-card {
+  border: 1px solid #d9d9d9;
+  width: 70px;
+  height: 70px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.header__center-about {
+  padding-left: 55px;
+}
+
+.header__time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 14px;
+  color: #252525;
+  padding-bottom: 15px;
+}
+
+.header__tel {
+  display: block;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: -0.02em;
+  color: #252525;
+  margin-bottom: 14px;
+}
+
+.header__time-text,
+.header__city-text {
+  margin: 0;
+}
+
+.header__time-text:first-child {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.header__time-text:last-child {
+  letter-spacing: -0.025em;
+}
+
+.header__city-text:last-child {
+  border-bottom: 1px dashed #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__city-text:last-child::before {
+  content: '';
+  position: absolute;
+  left: -9px;
+  width: 7px;
+  height: 7px;
+  background-image: url('../../images/play.svg');
+}
+
+.header__city {
+  padding-top: 4px;
+  border-top: 1px solid #d7d7d7;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.01em;
+  color: #252525;
+}
+
+.header__nav {
+  background: #252525;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  height: 34px;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__search {
+  display: flex;
+}
+
+.header__search-input {
+  width: 60px;
+  border: none;
+  outline: none;
+  background: #252525;
+  color: #fff;
+  padding: 0 5px;
+}
+
+.header__search-img {
+  cursor: pointer;
+  width: 39px;
+  background: #ffcc00;
+  border-radius: 9px 0 0 9px;
+  height: 34px;
+  background-image: url(../../images/search.svg);
+  background-position: left 8px center;
+  background-repeat: no-repeat;
+}
+
+.header__roster {
+  height: 100%;
+}
+
+.header__roster-list {
+  height: 100%;
+}
+
+.header__roster-list-item {
+  font-weight: 600;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 20px;
+  height: 100%;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.header__roster-list-item a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__roster-list-item:hover {
+  background: #ffcc00;
+}
+.header__roster-list-item:hover a {
+  color: #252525;
+}
+.header__sale {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  background: #ffcc00;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 0 9px 9px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 1175px) {
+  .header__tel {
+    font-size: 23px;
+  }
+  .header__center-about {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 1155px) {
+    .header__roster-list-item {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 1145px) {
+  .header__center-about {
+    padding-left: 20px;
+  }
+  .header__center-list {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1105px) {
+  .header__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+  }
+  .header__top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+  .header__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px 0;
+  }
+  .header__register {
+    padding-top: 10px;
+  }
+  .header__center {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px 0;
+  }
+  .header__center-about {
+    padding: 0;
+  }
+  .header__center-list {
+    padding: 0;
+  }
+  .header__nav {
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    gap: 10px 0;
+  }
+  .header__search {
+    width: 100%;
+  }
+  .header__search-img {
+    border-radius: 9px 0 0 0px;
+  }
+  .header__search-input {
+    width: 75%;
+  }
+  .header__roster-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+  }
+  .header__roster-list-item {
+    padding: 0;
+  }
+  .header__sale {
+    border-radius: 0 0 9px 9px;
+    padding: 15px 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    display: none;
+  }
+
+  .header_active {
+    display: block;
+  }
+}

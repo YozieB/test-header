@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Место</title>
+  </head>
+
+  <body class="page">
+    <label class="button" for="check">
+      <input type="checkbox" id="check" />
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <header class="header">
+      <div class="header__content">
+        <img src="<%=require("./images/logo.svg")%>" class="image" alt="Магазин
+        инструмента" />
+        <div class="header__main">
+          <div class="header__top">
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__list-item">
+                  <a href="#">Каталог инструментов</a>
+                </li>
+                <li class="header__list-item"><a href="#">Все для сада</a></li>
+                <li class="header__list-item">
+                  <a href="#">Ручной интрумент</a>
+                </li>
+                <li class="header__list-item"><a href="#">Электрика</a></li>
+                <li class="header__list-item"><a href="#">Доставка</a></li>
+                <li class="header__list-item"><a href="#">Оплата</a></li>
+                <li class="header__list-item"><a href="#">О нас</a></li>
+              </ul>
+            </nav>
+            <ul class="header__register">
+              <li class="header__register-item"><a href="#">Вход</a></li>
+              <li class="header__register-item"><a href="#">Регистрация</a></li>
+            </ul>
+          </div>
+          <div class="header__center">
+            <img src="<%=require("./images/banner.svg")%>" alt="Баннер"
+            class="image">
+            <ul class="header__center-list">
+              <li class="header__center-list-item">
+                <a href="#"><span>3</span> шт. / <span>17 250</span> р.</a>
+              </li>
+              <li class="header__center-list-item">
+                <a href="#">Избранное (<span>7</span>)</a>
+              </li>
+              <li class="header__center-list-item">
+                <a href="#">К сравнению (<span>5</span>)</a>
+              </li>
+            </ul>
+            <ul class="header__center-cards">
+              <li class="header__center-card">
+                <a href="#">
+                  <img src="<%=require("./images/card-1.jpg")%>" class="image"
+                  alt="">
+                </a>
+              </li>
+              <li class="header__center-card">
+                <a href="#">
+                  <img src="<%=require("./images/card-2.jpg")%>" class="image"
+                  alt="">
+                </a>
+              </li>
+              <li class="header__center-card">
+                <a href="#">
+                  <img src="<%=require("./images/card-3.jpg")%>" class="image"
+                  alt="">
+                </a>
+              </li>
+            </ul>
+            <div class="header__center-about">
+              <div class="header__time">
+                <p class="header__time-text">Время работы:</p>
+                <p class="header__time-text">10:00 — 19:00</p>
+              </div>
+              <a href="tel:84957212525" class="header__tel">8 495 721-25-25</a>
+              <div class="header__city">
+                <p class="header__city-text">Москва</p>
+                <a class="header__city-text" href="#">сменить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__nav">
+        <div class="header__search">
+          <div class="header__search-img"></div>
+          <input type="text" class="header__search-input" />
+        </div>
+        <nav class="header__roster">
+          <ul class="header__roster-list">
+            <li class="header__roster-list-item">
+              <a href="#">Перфораторы</a>
+            </li>
+            <li class="header__roster-list-item">
+              <a href="#">Дрели</a>
+            </li>
+            <li class="header__roster-list-item">
+              <a href="#">Шлифмашины</a>
+            </li>
+            <li class="header__roster-list-item">
+              <a href="#">Пистолеты</a>
+            </li>
+            <li class="header__roster-list-item">
+              <a href="#">Электропилы</a>
+            </li>
+            <li class="header__roster-list-item">
+              <a href="#">Наборы инструментов</a>
+            </li>
+            <li class="header__roster-list-item">
+              <a href="#">Акксесуары</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#" class="header__sale">РАСПРОДАЖА</a>
+      </div>
+    </header>
+  </body>
+</html>
